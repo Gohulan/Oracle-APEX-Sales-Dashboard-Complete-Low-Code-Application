@@ -1,1 +1,19 @@
-
+<div class="sp-dashboard" id="spDashboard">
+  <section class="sp-hero">
+    <div><p class="sp-eyebrow">SALES INTELLIGENCE · LIVE DASHBOARD</p>
+      <h1>Dashboard <span class="sp-wave">✦</span></h1>
+      <p>Welcome back, <strong>&APP_USER!HTML.</strong>. Monitor orders, customers and revenue in one place.</p>
+      <div class="sp-hero-actions"><button type="button" id="spRefresh" class="sp-btn">↻ Refresh dashboard</button><span id="spUpdated" class="sp-updated">Ready</span></div>
+    </div><div class="sp-hero-art" aria-hidden="true"><span>◈</span><small>SalesPulse</small></div>
+  </section>
+  <div class="sp-kpis" id="spKpis" aria-live="polite"></div>
+  <div class="sp-grid">
+    <section class="sp-card"><div class="sp-card-title"><h2>Revenue trend</h2><span class="sp-chip">Last 14 days</span></div>
+      <svg id="spTrend" viewBox="0 0 620 230" preserveAspectRatio="none" role="img" aria-label="Daily revenue line chart"></svg><div class="sp-axis" id="spTrendAxis"></div></section>
+    <section class="sp-card"><div class="sp-card-title"><h2>Revenue by category</h2><span class="sp-chip">Paid orders</span></div><div id="spCategories"></div></section>
+  </div>
+  <section class="sp-card sp-orders"><div class="sp-card-title"><h2>Recent orders</h2><span class="sp-chip">Latest 8</span></div>
+    <div class="sp-table-scroll"><table class="sp-table"><thead><tr><th>Order</th><th>Customer</th><th>Date</th><th>Status</th><th>Total (LKR)</th></tr></thead><tbody id="spRecent"></tbody></table></div>
+  </section>
+  <footer class="sp-footer">SalesPulse · Oracle APEX Workshop · Demo data only</footer>
+</div>

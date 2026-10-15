@@ -1,0 +1,44 @@
+/* SalesPulse APEX v2 — upload to Shared Components > Static Application Files.
+   Works with Universal Theme; native APEX navigation remains the single menu. */
+:root{--sp-ink:#17223c;--sp-muted:#78839b;--sp-brand:#6255ed;--sp-brand2:#8e68ff;--sp-border:#e9ebf4;--sp-bg:#f5f6fb;--sp-radius:18px}
+body .t-Body,.t-Body-content{background:var(--sp-bg)}
+/* Brand and built-in sidebar: use native APEX Navigation Menu across every page. */
+.t-Header{background:#fff;box-shadow:0 1px 0 var(--sp-border)}
+.t-Header-logo{font-weight:800;letter-spacing:-.5px}
+.t-Body-nav{background:#fff;border-right:1px solid var(--sp-border)}
+.t-TreeNav .a-TreeView-label{font-weight:550;color:#5c6882}
+.t-TreeNav .a-TreeView-row.is-selected,.t-TreeNav .a-TreeView-row:hover{background:#f0edff;border-radius:10px}
+.t-TreeNav .a-TreeView-row.is-selected .a-TreeView-label{color:#5544db;font-weight:750}
+/* Application region styling */
+.t-Region{border-radius:var(--sp-radius);box-shadow:0 6px 24px rgba(28,35,70,.035);border:1px solid var(--sp-border)}
+.t-Region-header{border-radius:var(--sp-radius) var(--sp-radius) 0 0}
+.a-IRR-table tr:hover td{background:#f8f7ff}
+.t-Button--hot{background:var(--sp-brand);border-color:var(--sp-brand)}
+/* Dashboard styles namespaced to avoid breaking native APEX pages */
+.sp-dashboard{font-family:Inter,'Segoe UI',Arial,sans-serif;color:var(--sp-ink);max-width:1500px;margin:0 auto;padding:8px 0 30px}
+.sp-dashboard *{box-sizing:border-box}
+.sp-hero{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:34px 40px;border-radius:22px;background:linear-gradient(112deg,#20264d 0%,#4e4cc6 65%,#7961e5 100%);color:white;overflow:hidden;position:relative;margin-bottom:20px}
+.sp-hero:after{content:'';position:absolute;right:-80px;top:-120px;width:340px;height:340px;border:1px solid #ffffff44;border-radius:50%}
+.sp-eyebrow{font-size:11px;font-weight:800;letter-spacing:2.3px;color:#c8c9ff;margin:0 0 12px}
+.sp-hero h1{color:white;font-size:clamp(28px,3vw,39px);font-weight:800;margin:0 0 10px;line-height:1.2}
+.sp-hero p{color:#e6e5ff;margin:0;line-height:1.6}
+.sp-wave{color:#ffd985}.sp-hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:23px}
+.sp-btn{border:0;border-radius:11px;padding:11px 17px;font-weight:750;color:#333268;background:#fff;cursor:pointer}
+.sp-btn:hover{background:#eceaff}.sp-updated{font-size:12px;color:#d5d3ff}
+.sp-hero-art{position:relative;z-index:1;display:flex;align-items:center;flex-direction:column;justify-content:center;width:155px;min-width:155px;height:155px;border-radius:32px;background:#ffffff19;border:1px solid #ffffff44;transform:rotate(-9deg)}
+.sp-hero-art span{font-size:74px;line-height:1}.sp-hero-art small{font-weight:800;letter-spacing:1px}
+.sp-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:20px}
+.sp-kpi,.sp-card{background:#fff;border:1px solid var(--sp-border);border-radius:var(--sp-radius);box-shadow:0 8px 24px rgba(27,35,69,.035)}
+.sp-kpi{padding:21px 22px;min-height:132px;position:relative;overflow:hidden}.sp-kpi:after{content:'';position:absolute;right:-26px;bottom:-37px;width:110px;height:110px;border:12px solid var(--sp-soft);border-radius:50%}
+.sp-kpi-head{display:flex;align-items:center;gap:10px;font-size:12px;color:#77819a;font-weight:700}.sp-kpi-icon{display:grid;place-items:center;background:var(--sp-soft);color:var(--sp-accent);width:35px;height:35px;border-radius:12px;font-size:18px}
+.sp-kpi-number{font-size:clamp(20px,2vw,28px);font-weight:850;letter-spacing:-.7px;margin:14px 0 4px}.sp-kpi-foot{font-size:11px;color:#9ba3b7}
+.sp-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;margin-bottom:20px}
+.sp-card{padding:23px 25px;min-width:0}.sp-card-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}
+.sp-card-title h2{font-size:16px;font-weight:800;margin:0}.sp-chip{font-size:11px;color:#6359bc;background:#f1efff;border-radius:30px;padding:7px 11px;white-space:nowrap}
+#spTrend{width:100%;height:230px;display:block}.sp-axis{display:flex;justify-content:space-between;font-size:11px;color:#9099ac}
+.sp-cat-row{display:grid;grid-template-columns:105px minmax(0,1fr) 90px;gap:10px;align-items:center;margin:19px 0;font-size:12px}.sp-cat-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sp-cat-track{height:9px;background:#f0eefb;border-radius:9px;overflow:hidden}.sp-cat-fill{height:100%;border-radius:9px;background:linear-gradient(90deg,#6559f0,#b084ff)}.sp-cat-amount{text-align:right;font-weight:800}
+.sp-table-scroll{overflow-x:auto}.sp-table{width:100%;border-collapse:collapse;min-width:540px}.sp-table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#8d96aa;border-bottom:1px solid #edf0f6;padding:13px 12px}.sp-table td{padding:14px 12px;border-bottom:1px solid #f0f2f7;font-size:13px}.sp-table tr:last-child td{border:0}
+.sp-status{display:inline-block;border-radius:30px;padding:5px 9px;font-size:10px;font-weight:800}.sp-status--paid{background:#e8f9ef;color:#1b9050}.sp-status--pending{background:#fff5db;color:#a16a0b}.sp-status--cancelled,.sp-status--refunded{background:#ffecef;color:#b94857}
+.sp-footer{text-align:center;color:#9ba4b5;font-size:11px;margin-top:22px}
+@media(max-width:1100px){.sp-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.sp-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.sp-hero{padding:25px 22px}.sp-hero-art{display:none}.sp-kpis{gap:10px}.sp-kpi{padding:16px 14px}.sp-card{padding:18px 15px}.sp-cat-row{grid-template-columns:85px minmax(0,1fr) 75px;gap:7px}.sp-kpi-number{font-size:20px}}
